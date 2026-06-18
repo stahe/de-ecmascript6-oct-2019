@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://stahe.github.io/de-ecmascript6-oct-2019/zeichenketten.html">
       
       
-        <link rel="prev" href="literalobjekte.html">
+        <link rel="prev" href="literale-objekte.html">
       
       
         <link rel="next" href="regulare-ausdrucke.html">
@@ -332,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="einrichten-einer-entwicklungsumgebung.html" class="md-nav__link">
+      <a href="einrichtung-einer-arbeitsumgebung.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Einrichten einer Entwicklungsumgebung
+    2. Einrichtung einer Arbeitsumgebung
   
 
     
@@ -386,14 +386,14 @@
   
   
     <li class="md-nav__item">
-      <a href="tabellen.html" class="md-nav__link">
+      <a href="arrays.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Tabellen
+    4. Arrays
   
 
     
@@ -413,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="literalobjekte.html" class="md-nav__link">
+      <a href="literale-objekte.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Literalobjekte
+    5. Literale Objekte
   
 
     
@@ -661,14 +661,14 @@
   
   
     <li class="md-nav__item">
-      <a href="es6-module.html" class="md-nav__link">
+      <a href="die-module-es6.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. ES6-Module
+    10. Die Module ES6
   
 
     
@@ -715,14 +715,14 @@
   
   
     <li class="md-nav__item">
-      <a href="javascript-http-funktionen.html" class="md-nav__link">
+      <a href="die-javascript-funktionen-von-http.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. JavaScript-HTTP-Funktionen
+    12. Die JavaScript-Funktionen von HTTP
   
 
     
@@ -742,14 +742,14 @@
   
   
     <li class="md-nav__item">
-      <a href="klassen.html" class="md-nav__link">
+      <a href="die-klassen.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    13. Klassen
+    13. Die Klassen
   
 
     
@@ -769,14 +769,14 @@
   
   
     <li class="md-nav__item">
-      <a href="javascript-http-clients-des-steuerberechnungsdienstes.html" class="md-nav__link">
+      <a href="http-javascript-clients-des-steuerberechnungsdienstes.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    14. JavaScript-HTTP-Clients des Steuerberechnungsdienstes
+    14. HTTP-Javascript-Clients des Steuerberechnungsdienstes
   
 
     
@@ -809,32 +809,32 @@
   
 
 
-<p><a id="refheadingtoc2042253980233556"></a></p>
+<p><span id="refheadingtoc2042253980233556" name="refheadingtoc2042253980233556" class="odt-bookmark-anchor"></span></p>
 <h1 id="6-zeichenketten">6. <span style="color: #365f91">Zeichenketten</span></h1>
-<p>JavaScript-Zeichenketten sind denen in PHP sehr ähnlich.</p>
-<p><img src="images/10000000000000C9000001318D77205E.png" width="81" height="122" style="width:2.133cm;height:3.237cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000C9000001318D77205E.png" /></p>
-<p><a id="refheadingtoc2042273980233556"></a></p>
+<p>Zeichenketten in JavaScript sind denen in PHP sehr ähnlich.</p>
+<p><img src="images/10000000000000C9000001318D77205E.png" width="81" height="122" style="width:2.133cm;height:3.23cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000C9000001318D77205E.png" /></p>
+<p><span id="refheadingtoc2042273980233556" name="refheadingtoc2042273980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="61-skript-str-01">6.1. <span style="color: #4f81bd"><strong>Skript</strong> [str-01]</span></h2>
-<p>Zunächst muss man verstehen, dass eine Zeichenkette, sobald sie erstellt wurde, nicht mehr geändert werden kann. Es gibt viele Methoden, um aus der ursprünglichen Zeichenkette eine neue zu erstellen, aber die ursprüngliche Zeichenkette bleibt unverändert. Außerdem kann eine Zeichenkette zwei Typen haben:</p>
+<p>Zunächst muss man verstehen, dass eine Zeichenkette, sobald sie erstellt wurde, nicht mehr geändert werden kann. Es gibt zahlreiche Methoden, um aus der ursprünglichen Zeichenkette eine neue zu erzeugen, doch die ursprüngliche bleibt dabei immer unverändert. Außerdem kann eine Zeichenkette zwei Arten annehmen:</p>
 <ul>
-  <li><b>[string], </b>wenn er mit einem String-Literal initialisiert wird;
+  <li><b>[string], </b>wenn sie mit einer Zeichenfolge initialisiert wird;
   </li>
-  <li><b>[object], </b>wenn er als Instanz der Klasse<b> [String] </b>erstellt wird;
+  <li><b>[object]</b>, wenn sie als Instanz der Klasse <b>[String]</b> erstellt wird;
   </li>
 </ul>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// strings are read-only (cannot be modified)</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a chain</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenketten sind schreibgeschützt (sie können nicht geändert werden)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eine Zeichenkette</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne1 = </span><span style="color:#a31515">&quot;abcd &quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// type</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Typ</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;typeof(chaîne1)=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (chaîne1));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// character n° 2</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichen Nr. 2</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;chaîne1</span><span style="font-weight:bold;color:#a31515">[2]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, chaîne1</span><span style="font-weight:bold;color:#000000">[2]</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// causes an error</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// löst einen Fehler aus</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">chaîne1</span><span style="font-weight:bold;color:#000000">[2]</span><span style="color:#000000"> = </span><span style="color:#a31515">&quot;0&quot;</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
@@ -849,36 +849,36 @@
 <span class="odt-code-line"><span class="odt-code-line-content">at Generator.next (&lt;anonymous&gt;)</span></span>
 </code></pre></div>
 
-<p><a id="refheadingtoc2042293980233556"></a></p>
+<p><span id="refheadingtoc2042293980233556" name="refheadingtoc2042293980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="62-skript-str-02">6.2. <span style="color: #4f81bd"><strong>Skript</strong> [str-02]</span></h2>
 <p>Dieses Skript zeigt, dass eine Zeichenkette auf zwei Arten erstellt werden kann.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// strings can be of two types</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a literal string</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;„use strict“;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Es gibt zwei Arten von Zeichenketten</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eine Literalzeichenfolge</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne1 = </span><span style="color:#a31515">&quot;abcd &quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// type</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Typ</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;typeof(chaîne1)=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (chaîne1));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// string instance</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Instanz von String</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne2 = </span><span style="color:#0000ff">new</span><span style="color:#000000"> String(</span><span style="color:#a31515">&quot;xyzt&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// type</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Typ</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;typeof(chaîne2)=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (chaîne2));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// other entry (without new) - type [string] not [object]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// andere Schreibweise (ohne „new“) – Typ [string] und nicht [object]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne3 = String(</span><span style="color:#a31515">&quot;12 34&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// type</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Typ</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;typeof(chaîne3)=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (chaîne3));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// type [string] and type [object] offer the same methods, those of the String class</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Der Typ [string] und der Typ [object] bieten dieselben Methoden, nämlich die der Klasse „String“</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;chaîne1.length=&quot;</span><span style="color:#000000">, chaîne1.length);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;chaîne2.length=&quot;</span><span style="color:#000000">, chaîne2.length);</span></span></span>
 </code></pre></div>
 
 <p><strong>Kommentare</strong></p>
 <ul>
-  <li>Zeile 6: Die Standardmethode zum Definieren einer Zeichenkette. <b>[string1] </b>ist vom Typ <b>[string]</b>;
+  <li>Zeile 6: Die übliche Methode zur Definition einer Zeichenkette. <b>[chaîne1] </b>hat den Typ <b>[string]</b>;
   </li>
-  <li>Zeile 10: Eine Zeichenkette kann mit dem Konstruktor der Klasse<b> [String] </b>erstellt werden. <b>[string2] </b>ist vom Typ <b>[object]</b>;
+  <li>Zeile 10: Eine Zeichenkette kann mithilfe des Konstruktors der Klasse <b>[String]</b> erstellt werden. <b>[chaîne2] </b>hat den Typ <b>[object]</b>;
   </li>
 </ul>
 
@@ -892,23 +892,23 @@
 <span class="odt-code-line"><span class="odt-code-line-content">chaîne2.length= 4</span></span>
 </code></pre></div>
 
-<p>Der Typ <strong>[string]</strong> nutzt die Methoden der Klasse <strong>[String]</strong>.</p>
-<p><a id="refheadingtoc2042313980233556"></a></p>
+<p>Der Typ <strong>[string]</strong> verfügt über die Methoden der Klasse <strong>[String]</strong>.</p>
+<p><span id="refheadingtoc2042313980233556" name="refheadingtoc2042313980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="63-skript-str-03">6.3. <span style="color: #4f81bd"><strong>Skript</strong> [str-03]</span></h2>
-<p>Dieses Skript zeigt eine bestimmte Zeichenfolge mit Variableninterpolation an.</p>
+<p>Dieses Skript zeigt eine bestimmte Zeichenfolge mit Variableninterpolation.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// chain</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenkette</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne = </span><span style="color:#a31515">&quot;Introduction à Javascript par l&#x27;exemple&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// chain with variable interpolation</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenkette mit Variableninterpolation</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> str = </span><span style="color:#a31515">`</span><span style="font-weight:bold;color:#a31515">[${chaîne}]</span><span style="color:#a31515">.substr(3, 2)=`</span><span style="color:#000000"> + chaîne.substr(3, 2)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">console.log(str);</span></span>
 </code></pre></div>
 
-<p><strong>Kommentare</strong></p>
+<p><strong>Anmerkungen</strong></p>
 <ul>
-  <li>Zeile 6: Es ist möglich, Zeichenfolgen zu verwenden, die ${Variable}-Ausdrücke enthalten, die durch den Wert der Variablen ersetzt werden. Dies folgt derselben Logik wie $-Variablen in PHP-Zeichenfolgen. Beachten Sie die Syntax für eine solche Zeichenfolge: Sie wird in Backticks (AltGr-7 auf einer französischen Tastatur) eingeschlossen;
+  <li>Zeile 6: Es ist möglich, Zeichenfolgen zu verwenden, die Ausdrücke wie ${variable} enthalten, die durch den Wert der Variablen ersetzt werden. Dies folgt derselben Logik wie die $-Variablen in den Zeichenfolgen von PHP. Beachten Sie die Schreibweise einer solchen Zeichenfolge: Sie wird von einem „Backstick“ oder umgekehrten Apostroph (AltGr-7 auf einer französischen Tastatur) umgeben;
   </li>
 </ul>
 
@@ -918,85 +918,85 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">[Introduction à Javascript par l&#x27;exemple]</span>.substr(3, 2)=ro</span></span>
 </code></pre></div>
 
-<p><a id="refheadingtoc2042333980233556"></a></p>
+<p><span id="refheadingtoc2042333980233556" name="refheadingtoc2042333980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="64-skript-str-04">6.4. <span style="color: #4f81bd"><strong>Skript</strong> [str-04]</span></h2>
-<p>Die Zeichenkette mit Variableninterpolation ist noch unzureichend. Es ist nicht möglich, die Variable im Ausdruck ${variable} durch einen Ausdruck zu ersetzen. Für diejenigen, die in C programmiert haben, gibt es nichts Vergleichbares zu den Funktionen <strong>[printf, sprintf]</strong> zum Schreiben oder Erstellen formatierter Zeichenketten. Hunderte von Entwicklern haben Tausende von JavaScript-Paketen erstellt und damit ein riesiges Ökosystem geschaffen. Wenn Sie einen Bedarf haben, der von JavaScript nicht nativ abgedeckt wird, ist es an der Zeit, nach einem Paket zu suchen, das diesen erfüllt. Dazu verwenden wir den Paketmanager <strong>[npm]</strong>. Er verfügt über eine <strong>[</strong>Suchfunktion<strong>]</strong>, mit der Sie innerhalb der Paketbeschreibungen nach einer Zeichenkette suchen können. <strong>[npm]</strong> gibt eine Liste der Pakete zurück, die der Suche entsprechen. Wir werden daher in den Paketbeschreibungen nach der Zeichenkette <strong>[sprintf]</strong> suchen:</p>
-<p><img src="images/10000000000008B9000002C23DAD22B5.png" width="670" height="212" style="width:17.722cm;height:5.604cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000008B9000002C23DAD22B5.png" /></p>
+<p>Die Zeichenkette mit Variableninterpolation reicht nicht aus. Es ist nämlich nicht möglich, anstelle der Variablen im Ausdruck ${variable} einen Ausdruck einzusetzen. Für diejenigen, die schon einmal in C programmiert haben: Es gibt nichts Vergleichbares zu den Funktionen <strong>[printf, sprintf]</strong>, um formatierte Zeichenketten zu schreiben oder zu erstellen. Hunderte von Entwicklern haben Tausende von JavaScript-Paketen entwickelt, die ein riesiges Ökosystem bilden. Wenn es einen Bedarf gibt, der von JavaScript nicht nativ abgedeckt wird, ist es an der Zeit, nach einem Paket zu suchen, das diesen Bedarf erfüllt. Dazu verwenden wir den Paketmanager <strong>[npm]</strong>. Dieser verfügt über eine Option <strong>[search]</strong>, mit der man in der Beschreibung der Pakete nach einer Zeichenfolge suchen kann. <strong>[npm]</strong> gibt die Liste der Pakete zurück, die der Suche entsprechen. Wir suchen also nach der Zeichenfolge <strong>[sprintf]</strong> in der Beschreibung der Pakete:</p>
+<p><img src="images/10000000000008B9000002C23DAD22B5.png" width="670" height="212" style="width:17.722cm;height:5.6cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000008B9000002C23DAD22B5.png" /></p>
 <ul>
-  <li>in Spalte <b>[4] </b>die Schlüsselwörter der Pakete in Spalte <b>[3]</b>;
+  <li>in der Spalte <b>[4] </b>die Schlüsselwörter der Pakete aus der Spalte <b>[3]</b>;
   </li>
-  <li>in Spalte <b>[5] </b>die Beschreibungen der Pakete in Spalte <b>[3]</b>;
+  <li>in der Spalte <b>„[5]“ </b>die Beschreibung der Pakete aus der Spalte <b>„[3]“</b>;
   </li>
 </ul>
 
-<p>Der nächste Schritt besteht darin, die <strong>[npm]</strong>-Website <strong>[https://www.npmjs.com/]</strong> aufzurufen und die Paketbeschreibungen zu lesen:</p>
+<p>Der nächste Schritt besteht darin, die Website des Tools <strong>[npm]</strong>, <strong>[https://www.npmjs.com/]</strong> aufzurufen und die Beschreibung der Pakete zu lesen:</p>
 <p><img src="images/100000000000069700000427F84A598B.png" width="422" height="266" style="width:11.16cm;height:7.033cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000069700000427F84A598B.png" /></p>
 <p>In <strong>[3]</strong> sehen wir uns die Liste der Pakete an und wählen eines aus.</p>
-<p><img src="images/1000000000000485000002026D3D5A42.png" width="347" height="154" style="width:9.179cm;height:4.078cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000485000002026D3D5A42.png" /></p>
-<p>In der Paketbeschreibung finden Sie Anweisungen zur Installation und Verwendung:</p>
-<p><img src="images/10000000000004970000034CF10EC898.png" width="294" height="211" style="width:7.772cm;height:5.583cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004970000034CF10EC898.png" /></p>
-<p>Wir installieren das <strong>[sprintf-js]</strong>-Paket in einem <strong>[VSCode]</strong>-Terminal:</p>
-<p><img src="images/1000000000000558000001CE1C9B1593.png" width="410" height="139" style="width:10.86cm;height:3.667cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000558000001CE1C9B1593.png" /></p>
-<p>Diese Installation ändert die Datei <strong>[package.json], die</strong> sich im Stammverzeichnis des Ordners <strong>[javascript]</strong> befindet <strong>[2]</strong>:</p>
-<p><img src="images/100000000000026B000001AB5E547E08.png" width="248" height="171" style="width:6.549cm;height:4.517cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000026B000001AB5E547E08.png" /></p>
-<p>Wie oben gezeigt, wurde das Paket in den <strong>[dependencies]</strong> installiert, d. h. den Paketen, die für die Ausführung des Projekts erforderlich sind. Beachten Sie, dass Pakete, die nur während der Projektentwicklung benötigt werden, in <strong>den [devDependencies]</strong> abgelegt werden. Sie werden zur Laufzeit nicht verwendet. Diese Unterscheidung ist wichtig, wenn die endgültige Version des Projekts für die Produktionsbereitstellung erstellt wird. Es stehen Tools zur Verfügung, um:</p>
+<p><img src="images/1000000000000485000002026D3D5A42.png" width="347" height="154" style="width:9.179cm;height:4.082cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000485000002026D3D5A42.png" /></p>
+<p>In der Paketbeschreibung finden Sie Informationen zur Installation und Verwendung:</p>
+<p><img src="images/10000000000004970000034CF10EC898.png" width="294" height="211" style="width:7.772cm;height:5.579cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004970000034CF10EC898.png" /></p>
+<p>Wir installieren das Paket <strong>[sprintf-js]</strong> in einem Terminal von <strong>[VSCode]</strong>:</p>
+<p><img src="images/1000000000000558000001CE1C9B1593.png" width="410" height="139" style="width:10.86cm;height:3.671cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000558000001CE1C9B1593.png" /></p>
+<p>Diese Installation ändert die Datei <strong>[package.json], die</strong> sich im Stammverzeichnis des Ordners <strong>[javascript] [2]</strong> befindet:</p>
+<p><img src="images/100000000000026B000001AB5E547E08.png" width="248" height="171" style="width:6.549cm;height:4.523cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000026B000001AB5E547E08.png" /></p>
+<p>Wie oben zu sehen ist, wurde das Paket in den <strong>[dependencies]</strong> installiert, d. h. in den Paketen, die für die Ausführung des Projekts erforderlich sind. Zur Erinnerung: In <strong>[devDependencies]</strong> werden die erforderlichen Pakete ausschließlich während der Projektentwicklung abgelegt. Sie werden während der Ausführung nicht verwendet. Dieser Unterschied ist wichtig, wenn die endgültige Version des Projekts für die Produktionsumgebung erstellt werden muss. Es gibt Tools, um:</p>
 <ul>
-  <li>alle für die Ausführung erforderlichen JavaScript-Dateien in einer einzigen Datei zusammenzufassen. Die Pakete in <b>[devDependencies] </b>sind daher in dieser endgültigen Datei nicht enthalten;
+  <li>alle für die Ausführung erforderlichen jS-Dateien in einer einzigen Datei zusammenzufassen. Die Pakete aus den <b>[devDependencies]-Dateien </b>sind daher in dieser endgültigen Datei nicht enthalten;
   </li>
-  <li>sie zu minimieren, d. h. ihre Größe so weit wie möglich zu reduzieren. Dazu werden beispielsweise alle Kommentare entfernt;
+  <li>diese zu minimieren, d. h. ihre Größe so gering wie möglich zu halten. Dazu werden beispielsweise alle Kommentare entfernt;
   </li>
-  <li>den Code zu „verschleiern“, um ihn schwer verständlich zu machen. Beispielsweise werden die Variablen rate, salary und tax durch die Variablen a, b und c ersetzt;
+  <li>den Code zu „verschleiern“, um ihn schwer verständlich zu machen. Beispielsweise werden die Variablen „Satz“, „Gehalt“ und „Steuer“ durch die Variablen „a“, „b“ und „c“ ersetzt;
   </li>
-  <li>andere Optimierungen durchführen;
+  <li>weitere Optimierungen vornehmen;
   </li>
 </ul>
 
-<p>Diese Optimierung der endgültigen Datei eines JavaScript-Projekts wird in der Webprogrammierung eingesetzt. Eine Webanwendung kann von einer großen Anzahl von JavaScript-Dateien abhängig sein. Das Laden dieser Dateien in einem Browser kann die Anzeige der ersten Seite der Anwendung verlangsamen. Die oben beschriebene Optimierung zielt darauf ab, diese Ladezeit zu verbessern. Wenn Nutzer die Ladezeit als zu lang empfinden, wird die Anwendung nicht genutzt.</p>
-<p>Da wir nun das <strong>[sprintf-js]</strong>-Paket haben, müssen wir es verwenden. Dies ist das <strong>[str-04]</strong>-Skript:</p>
+<p>Diese Optimierung der endgültigen Datei eines jS-Projekts wird in der Webprogrammierung verwendet. Eine Webanwendung kann von sehr vielen JavaScript-Dateien abhängig sein. Das Laden dieser Dateien durch einen Browser kann die Anzeige der ersten Seite der Anwendung verlangsamen. Die vorgenannte Optimierung zielt darauf ab, diese Ladezeit zu verkürzen. Wenn die Ladezeit von den Nutzern als zu lang empfunden wird, wird die Anwendung nicht genutzt.</p>
+<p>Da wir nun über das Paket <strong>[sprintf-js]</strong> verfügen, müssen wir es nutzen. Es handelt sich um das Skript <strong>[str-04]</strong>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use of an external package to provide the sprintf function</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verwendung eines externen Pakets, um die Funktion `sprintf` nutzen zu können</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">import</span><span style="color:#000000"> { sprintf } </span><span style="color:#0000ff">from</span><span style="color:#000000"> </span><span style="color:#a31515">&#x27;sprintf-js&#x27;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// chain</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenkette</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne = </span><span style="color:#a31515">&quot;Introduction à Javascript par l&#x27;exemple&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// method</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Methode</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.substr(3,2)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.substr(3, 2)));</span></span></span>
 </code></pre></div>
 
-<p>Mit ECMAScript 6 verwenden wir das Schlüsselwort <strong>[import]</strong>, um ein von einem Paket exportiertes Objekt <strong>zu importieren</strong>. Um herauszufinden, was das Paket exportiert, können Sie sich dessen Code ansehen:</p>
-<p><img src="images/100000000000060D0000015281E8D3FA.png" width="620" height="135" style="width:16.392cm;height:3.577cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000060D0000015281E8D3FA.png" /></p>
+<p>Mit ECMAScript 6 verwenden wir das Schlüsselwort <strong>[import]</strong>, um ein von einem Paket exportiertes Objekt <strong>zu importieren</strong>. Um herauszufinden, was das Paket exportiert, können wir uns dessen Code ansehen:</p>
+<p><img src="images/100000000000060D0000015281E8D3FA.png" width="620" height="135" style="width:16.392cm;height:3.581cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000060D0000015281E8D3FA.png" /></p>
 <ul>
-  <li>in <b>[1] </b>klicken Sie mit der rechten Maustaste auf das importierte Paket;
+  <li>in <b>[1] </b>mit einem Rechtsklick auf das importierte Paket;
   </li>
-  <li>in <b>[2] </b>möchten wir dessen Definition sehen;
+  <li>in <b>[2] </b>möchte man die Definition einsehen;
   </li>
-  <li>in <b>[3-4] </b>sehen wir, dass das Paket eine Funktion namens <b>[sprintf] </b>exportiert;
+  <li>in <b>[3-4] </b>sieht man, dass das Paket eine Funktion namens <b>[sprintf]</b> exportiert;
   </li>
 </ul>
 
-<p>Die Funktion <strong>[sprintf]</strong> aus dem Paket <strong>[sprintf-js]</strong> wird mit der folgenden Anweisung importiert:</p>
+<p>Die Funktion <strong>[sprintf]</strong> aus dem Paket <strong>[sprintf-js]</strong> wird mit der Anweisung importiert:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">import</span><span style="color:#000000"> { sprintf } </span><span style="color:#0000ff">from</span><span style="color:#000000"> </span><span style="color:#a31515">&#x27;sprintf-js&#x27;</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
 <p>Der vollständige Code:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use of an external package to provide the sprintf function</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verwendung eines externen Pakets, um die Funktion `sprintf` nutzen zu können</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">import</span><span style="color:#000000"> { sprintf } </span><span style="color:#0000ff">from</span><span style="color:#000000"> </span><span style="color:#a31515">&#x27;sprintf-js&#x27;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// chain</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenkette</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne = </span><span style="color:#a31515">&quot;Introduction à Javascript par l&#x27;exemple&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// method</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Methode</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.substr(3,2)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.substr(3, 2)));</span></span></span>
 </code></pre></div>
 
-<p>ergibt folgende Ergebnisse:</p>
+<p>liefert folgende Ergebnisse:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#316bcd">[Running]</span><span style="color:#a31515"> C:\myprograms\laragon-lite\bin\nodejs\node-v10\node.exe &quot;c:\Temp\19-09-01\javascript\strings\str-04.js&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">c:\Temp\19-09-01\javascript\strings\str-04.js:3</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">import { sprintf } from &#x27;sprintf-js&#x27;;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">^</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">SyntaxError: Unexpected token {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">at new Script (vm.js:79:7)</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">at createScript (vm.js:251:10)</span></span>
@@ -1004,65 +1004,65 @@
 <span class="odt-code-line"><span class="odt-code-line-content">at Module._compile (internal/modules/cjs/loader.js:657:28)</span></span>
 </code></pre></div>
 
-<p>Zeile 3: Die <strong>[import]</strong>-Anweisung wird nicht erkannt. Dies liegt daran, dass die in diesem Kurs verwendete Version 10.15.1 von <strong>[node.js]</strong> (Sept. 2019) den ECMAScript-Standard zum Importieren von Paketen, sogenannten Modulen, noch nicht unterstützt. Im Jahr 2019 unterstützt <strong>[node.js]</strong> einen Modulstandard namens CommonJS. Die Integration von ECMAScript-Modulen durch <strong>[node.js]</strong> ist für 2020 geplant. Wieder einmal haben Entwickler die Initiative ergriffen und Pakete erstellt, die bereits jetzt (2019) die Verwendung von ES6-Modulen mit <strong>[node.js]</strong> ermöglichen.</p>
-<p>Wir werden ein Paket namens <strong>[esm]</strong> (ECMAScript Modules) verwenden. Wir installieren es in einem Terminal für das <strong>[javascript]</strong>-Projekt:</p>
-<p><img src="images/10000000000005560000017C3D85E466.png" width="547" height="152" style="width:14.46cm;height:4.023cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005560000017C3D85E466.png" /></p>
-<p>In <strong>[4]</strong> sehen wir, dass die Installation des <strong>[esm]</strong>-Pakets <strong>[1-3]</strong> die Datei <strong>[javascript/package.json]</strong> geändert hat.</p>
-<p>Wir sind noch nicht fertig. Damit das <strong>[esm]</strong>-Modul von <strong>[node.js]</strong> verwendet werden kann, müssen wir es mit dem Argument <strong>[-r esm]</strong> ausführen.</p>
-<p>Daher ändern wir die Konfiguration der <strong>[Code Runner]</strong>-Erweiterung in <strong>[VSCode]</strong>:</p>
-<p><img src="images/1000000000000623000003283CBE44C5.png" width="629" height="323" style="width:16.632cm;height:8.555cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000623000003283CBE44C5.png" /></p>
-<p><img src="images/1000000000000674000001DF96DD6E5D.png" width="578" height="168" style="width:15.289cm;height:4.433cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000674000001DF96DD6E5D.png" /></p>
+<p>Zeile 3: Der Befehl <strong>[import]</strong> wird nicht verstanden. Dies liegt daran, dass die in diesem Kurs verwendete Version 10.15.1 von <strong>[node.js]</strong> (September 2019) den Standard ECMAScript für den Import von Paketen, die als Module bezeichnet werden, noch nicht unterstützt. Im Jahr 2019 entspricht <strong>[node.js]</strong> einem Modulstandard namens CommonJS. Die Integration der ECMAScript-Module durch <strong>[node.js]</strong> ist für 2020 vorgesehen. Auch hier haben sich Entwickler an die Arbeit gemacht und Pakete erstellt, die bereits jetzt (2019) die Verwendung von Modulen ES6 mit <strong>[node.js]</strong> ermöglichen.</p>
+<p>Wir werden ein Paket namens <strong>[esm]</strong> (ECMAScript-Module) verwenden. Wir installieren es in einem Terminal des Projekts <strong>[javascript]</strong>:</p>
+<p><img src="images/10000000000005560000017C3D85E466.png" width="547" height="152" style="width:14.46cm;height:4.022cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005560000017C3D85E466.png" /></p>
+<p>In <strong>[4]</strong> lässt sich feststellen, dass die Installation des Pakets <strong>[esm] [1-3]</strong> die Datei <strong>[javascript/package.json]</strong> verändert hat.</p>
+<p>Wir sind noch nicht fertig. Damit das Modul <strong>[esm]</strong> von <strong>[node.js]</strong> verwendet wird, muss dieses mit dem Argument <strong>[-r esm]</strong> gestartet werden.</p>
+<p>Wir ändern daher die Konfiguration der Erweiterung <strong>[Code Runner]</strong> von <strong>[VSCode]</strong>:</p>
+<p><img src="images/1000000000000623000003283CBE44C5.png" width="629" height="323" style="width:16.632cm;height:8.55cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000623000003283CBE44C5.png" /></p>
+<p><img src="images/1000000000000674000001DF96DD6E5D.png" width="578" height="167" style="width:15.289cm;height:4.429cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000674000001DF96DD6E5D.png" /></p>
 <p>In <strong>[11]</strong> fügen wir das Argument <strong>[-r esm]</strong> hinzu und speichern (Strg-S) die Konfiguration.</p>
 <p>Nun können wir das Skript <strong>[str-04]</strong> ausführen:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use of an external package to provide the sprintf function</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verwendung eines externen Pakets, um die Funktion `sprintf` nutzen zu können</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">import</span><span style="color:#000000"> { sprintf } </span><span style="color:#0000ff">from</span><span style="color:#000000"> </span><span style="color:#a31515">&#x27;sprintf-js&#x27;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// chain</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenkette</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne = </span><span style="color:#a31515">&quot;Introduction à Javascript par l&#x27;exemple&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// substr method</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Methode substr</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.substr(3,2)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.substr(3, 2)));</span></span></span>
 </code></pre></div>
 
-<p><img src="images/10000000000007E30000010E2282F9EF.png" width="606" height="81" style="width:16.03cm;height:2.143cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007E30000010E2282F9EF.png" /></p>
-<p><a id="refheadingtoc2042353980233556"></a></p>
+<p><img src="images/10000000000007E30000010E2282F9EF.png" width="606" height="81" style="width:16.03cm;height:2.14cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007E30000010E2282F9EF.png" /></p>
+<p><span id="refheadingtoc2042353980233556" name="refheadingtoc2042353980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="65-skript-str-05">6.5. <span style="color: #4f81bd"><strong>Skript</strong> [str-05]</span></h2>
-<p>In der Dokumentation steht Folgendes über die Funktion <strong>[sprintf]</strong>:</p>
+<p>In der Dokumentation zur Funktion <strong>[sprintf]</strong> heißt es:</p>
 <p><em>Die Platzhalter in der Formatzeichenfolge sind mit % gekennzeichnet und werden in dieser Reihenfolge von einem oder mehreren der folgenden Elemente gefolgt:</em></p>
 <ul>
-  <li>Eine optionale Zahl, gefolgt von einem $-Zeichen, die angibt, welcher Argumentindex für den Wert verwendet werden soll. Wenn nichts angegeben wird, werden die Argumente in derselben Reihenfolge wie die Platzhalter in der Eingabezeichenfolge platziert.
+  <li>Eine optionale Zahl, gefolgt von einem $-Zeichen, das angibt, welcher Argumentindex für den Wert verwendet werden soll. Wenn nichts angegeben wird, werden die Argumente in derselben Reihenfolge wie die Platzhalter in der Eingabezeichenfolge platziert.
   </li>
-  <li>Ein optionales Pluszeichen (+), das bei numerischen Werten erzwingt, dass dem Ergebnis ein Plus- oder Minuszeichen vorangestellt wird. Standardmäßig wird für negative Zahlen nur das Minuszeichen (-) verwendet.
+  <li>Ein optionales Pluszeichen (+), das bei numerischen Werten erzwingt, dass dem Ergebnis ein Plus- oder Minuszeichen vorangestellt wird. Standardmäßig wird bei negativen Zahlen nur das Minuszeichen (-) verwendet.
   </li>
-  <li>Ein optionaler Füllzeichen-Spezifizierer, der angibt, welches Zeichen zum Auffüllen verwendet werden soll (falls angegeben). Mögliche Werte sind 0 oder jedes andere Zeichen, dem ein &#x27; (einfaches Anführungszeichen) vorangestellt ist. Standardmäßig wird mit Leerzeichen aufgefüllt.
+  <li>Ein optionaler Auffüllbezeichner, der angibt, welches Zeichen zum Auffüllen verwendet werden soll (falls angegeben). Mögliche Werte sind 0 oder jedes andere Zeichen, dem ein &#x27; (einfaches Anführungszeichen) vorangestellt ist. Standardmäßig wird mit Leerzeichen aufgefüllt.
   </li>
-  <li>Ein optionales Minuszeichen (-), das sprintf veranlasst, das Ergebnis dieses Platzhalters linksbündig auszurichten. Standardmäßig wird das Ergebnis rechtsbündig ausgerichtet.
+  <li>Ein optionales Minuszeichen (-), das bewirkt, dass sprintf das Ergebnis dieses Platzhalters linksbündig ausrichtet. Standardmäßig wird das Ergebnis rechtsbündig ausgerichtet.
   </li>
-  <li>Eine optionale Zahl, die die Anzahl der Zeichen angibt, die das Ergebnis enthalten soll. Ist der zurückzugebende Wert kürzer als diese Zahl, wird das Ergebnis aufgefüllt. Bei Verwendung mit dem Typbezeichner j (JSON) gibt die Auffülllänge die für die Einrückung verwendete Tabulatorgröße an.
+  <li>Eine optionale Zahl, die angibt, wie viele Zeichen das Ergebnis haben soll. Ist der zurückzugebende Wert kürzer als diese Zahl, wird das Ergebnis aufgefüllt. Bei Verwendung mit dem Typbezeichner j (JSON) gibt die Auffülllänge die für die Einrückung verwendete Tabulatorgröße an.
   </li>
-  <li><i>Ein optionaler Präzisionsmodifikator, bestehend aus einem . (Punkt) gefolgt von einer Zahl, der angibt, wie viele Stellen bei Gleitkommazahlen angezeigt werden sollen. Bei Verwendung mit dem Typbezeichner g gibt er die Anzahl der signifikanten Stellen an. Bei Verwendung auf einer Zeichenkette bewirkt er, dass das Ergebnis gekürzt wird.</i>
+  <li>Ein optionaler Präzisionsmodifikator, bestehend aus einem . (Punkt) gefolgt von einer Zahl, der angibt, wie viele Ziffern bei Gleitkommazahlen angezeigt werden sollen. Bei Verwendung mit dem Typbezeichner g gibt er die Anzahl der signifikanten Ziffern an. Bei Verwendung auf einer Zeichenkette bewirkt er, dass das Ergebnis gekürzt wird.
   </li>
-  <li>Ein Typbezeichner, der einer der folgenden sein kann:
+  <li>Ein Typbezeichner, der eine der folgenden Formen annehmen kann:
     <ul>
-      <li>% — ergibt das Literalzeichen %
+      <li>% — liefert das Literalzeichen „%“
       </li>
       <li>b — liefert eine Ganzzahl als Binärzahl
       </li>
-      <li>c — liefert eine Ganzzahl als Zeichen mit diesem ASCII-Wert
+      <li>c — liefert eine Ganzzahl als Zeichen mit dem entsprechenden Wert
       </li>
-      <li>d oder i — gibt eine Ganzzahl als vorzeichenbehaftete Dezimalzahl zurück
+      <li>d oder i – liefert eine Ganzzahl als vorzeichenbehaftete Dezimalzahl
       </li>
-      <li>e — gibt eine Gleitkommazahl in wissenschaftlicher Notation zurück
+      <li>e — liefert eine Gleitkommazahl in wissenschaftlicher Notation
       </li>
-      <li>u — gibt eine Ganzzahl als vorzeichenlose Dezimalzahl zurück
+      <li>u — liefert eine Ganzzahl als vorzeichenlose Dezimalzahl
       </li>
-      <li>f — gibt eine Gleitkommazahl unverändert zurück; siehe Hinweise zur Genauigkeit oben
+      <li>f — liefert einen Float-Wert unverändert; siehe Hinweise zur Genauigkeit oben
       </li>
-      <li>g — gibt eine Gleitkommazahl unverändert zurück; siehe Hinweise zur Genauigkeit oben
+      <li>g — liefert einen Float-Wert unverändert; siehe Hinweise zur Genauigkeit oben
       </li>
       <li>o — gibt eine Ganzzahl als Oktalzahl zurück
       </li>
-      <li>s — gibt eine Zeichenkette unverändert zurück
+      <li><i>s — gibt eine Zeichenkette unverändert zurück</i>
       </li>
       <li>t — gibt „true“ oder „false“ zurück
       </li>
@@ -1072,7 +1072,7 @@
       </li>
       <li>x — gibt eine Ganzzahl als Hexadezimalzahl (Kleinbuchstaben) zurück
       </li>
-      <li>X — gibt eine Ganzzahl als Hexadezimalzahl (Großbuchstaben) zurück
+      <li>X — gibt eine Ganzzahl als Hexadezimalzahl (in Großbuchstaben) zurück
       </li>
       <li>j — gibt ein JavaScript-Objekt oder -Array als JSON-kodierte Zeichenkette zurück
       </li>
@@ -1082,30 +1082,30 @@
 
 <p>Das Skript <strong>[script-05]</strong> implementiert einige dieser Formate:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use of an external package to provide the sprintf function</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verwendung eines externen Pakets, um die Funktion `sprintf` nutzen zu können</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">import</span><span style="color:#000000"> { sprintf } </span><span style="color:#0000ff">from</span><span style="color:#000000"> </span><span style="color:#a31515">&#x27;sprintf-js&#x27;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// chain</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenkette</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne = </span><span style="color:#a31515">&quot;Javascript&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// character strings</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenketten</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s, %%s]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s, %%20s]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%20s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s, %%-20s]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%-20s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// integers</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Ganzzahlen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%d, %%d]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%d]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, 10, 10));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%d, %%4d]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%4d]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, 10, 10));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%d, %%-4d]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%-4d]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, 10, 10));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%d, %%04d]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%04d]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, 10, 10));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// real</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Gleitkommazahlen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%f, %%f]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%f]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, -10.5, -10.5));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%f, %%10.2f]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%10.2f]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, -10.5, -10.5));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%f, %%-10.2f]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%-10.2f]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, -10.5, -10.5));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%f, %%010.3f]</span><span style="color:#a31515">=&gt;</span><span style="font-weight:bold;color:#a31515">[%010.3f]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, -10.5, -10.5));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// json</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// JSON</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;personne (%%j)=%j&quot;</span><span style="color:#000000">, { nom: </span><span style="color:#a31515">&quot;mathieu&quot;</span><span style="color:#000000">, âge: 34 }));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// type</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Typ</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;type personne (%%T)=%T&quot;</span><span style="color:#000000">, { nom: </span><span style="color:#a31515">&quot;mathieu&quot;</span><span style="color:#000000">, âge: 34 }));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// boolean</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Boolesche Werte</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;booléen (%%t)=%t&quot;</span><span style="color:#000000">, 4 === 4));</span></span></span>
 </code></pre></div>
 
@@ -1128,48 +1128,48 @@
 <span class="odt-code-line"><span class="odt-code-line-content">booléen (%t)=true</span></span>
 </code></pre></div>
 
-<p><a id="refheadingtoc2042373980233556"></a></p>
+<p><span id="refheadingtoc2042373980233556" name="refheadingtoc2042373980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="66-skript-str-06">6.6. <span style="color: #4f81bd"><strong>Skript</strong> [str-06]</span></h2>
-<p>Das Skript <strong>[str-06]</strong> veranschaulicht einige Methoden der Klasse <strong>[String],</strong> die auch für den Typ <strong>[string]</strong> verwendet werden können:</p>
+<p>Das Skript <strong>[str-06]</strong> stellt einige Methoden der Klasse <strong>[String]</strong> vor, die auch für den Typ <strong>[string]</strong> verwendet werden können:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use of an external package to provide the sprintf function</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verwendung eines externen Pakets, um die Funktion sprintf nutzen zu können</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">import</span><span style="color:#000000"> { sprintf } </span><span style="color:#0000ff">from</span><span style="color:#000000"> </span><span style="color:#a31515">&#x27;sprintf-js&#x27;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// chain</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Zeichenkette</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne = </span><span style="color:#a31515">&quot;  Introduction à Javascript &quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a few methods</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// substr(10,2): 2 characters starting from number 10</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// einige Methoden</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// substr(10,2): 2 Zeichen ab Position 10</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.substr(10,2)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.substr(10, 2)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// trim: eliminates blanks at the beginning and end of a chain (blank=b \t \r \n \f)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// trim: Entfernen von Leerzeichen am Anfang und Ende der Zeichenkette (Leerzeichen = \b \t \r \n \f)</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.trim()=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.trim()));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// toLowerCase: transformation to lower case</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// toLowerCase: Umwandlung in Kleinbuchstaben</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.toLowerCase=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.toLowerCase()));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// toUpperCase: transformation into uppercase letters</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// toUpperCase: Umwandlung in Großbuchstaben</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.toUpperCase=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.toUpperCase()));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// indexOf: position of a searched  string within the string, -1 if the substring doesn&#x27;t exist</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// indexOf: Position einer gesuchte n Zeichenfolge in der Zeichenfolge, -1, wenn die Teilzeichenfolge nicht vorhanden ist</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.indexOf(&#x27;Java&#x27;)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.indexOf(</span><span style="color:#a31515">&#x27;Java&#x27;</span><span style="color:#000000">)));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.trim().indexOf(&#x27;abcd&#x27;)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.indexOf(</span><span style="color:#a31515">&#x27;abcd&#x27;</span><span style="color:#000000">)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// includes: true if the string searched for is in the string</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// includes: wahr, wenn die gesuchte Zeichenfolge in der Zeichenfolge enthalten ist</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.includes(&#x27;Java&#x27;)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.includes(</span><span style="color:#a31515">&#x27;Java&#x27;</span><span style="color:#000000">)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// length: string length - not a method but a property</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// length: Länge der Zeichenkette – ist keine Methode, sondern eine Eigenschaft</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.length=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.length));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// slice (7,10): strings of characters 7 to 9</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// slice (7,10): Zeichenfolge von Zeichen Nr. 7 bis 9</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.slice(7,10)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.slice(7, 10)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// match: searches for an expression in the string - this expression can be a regular expression</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// /intro/i: regular expression designating the string [intro] in upper or lower case</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// returns the string found</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// match: Sucht nach einem Ausdruck in der Zeichenkette – dieser Ausdruck kann ein regulärer Ausdruck sein</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// /intro/i: regulärer Ausdruck, der die Zeichenfolge [intro] in Groß- oder Kleinbuchstaben bezeichnet</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// gibt die gefundene Zeichenfolge zurück</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.match(/intro/i)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.match(</span><span style="color:#a31515">/intro/</span><span style="color:#0000ff">i</span><span style="color:#000000">)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// replace: replaces string1 with string2 in string</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// replaces the 1st occurrence of i with x</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// replace: Ersetzt Zeichenfolge1 durch Zeichenfolge2 in der Zeichenfolge</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// ersetzt das erste Vorkommen von i durch x</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.replace(&#x27;i&#x27;,&#x27;x&#x27;)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.replace(</span><span style="color:#a31515">&#x27;i&#x27;</span><span style="color:#000000">, </span><span style="color:#a31515">&#x27;x&#x27;</span><span style="color:#000000">)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// replaces all occurrences of i with x</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// /i/g is a regular expression designating all (g) occurrences of i</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// ersetzt alle Vorkommen von „i“ durch „x“</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// /i/g ist ein regulärer Ausdruck, der alle (g) Vorkommen von i bezeichnet</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.replace(/i/g,&#x27;x&#x27;)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.replace(</span><span style="color:#a31515">/i/</span><span style="color:#0000ff">g</span><span style="color:#000000">, </span><span style="color:#a31515">&#x27;x&#x27;</span><span style="color:#000000">)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// split: splits the string into words separated by the split parameter</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// renders the table of these words</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// /\s*/ : words separated by 0 or more spaces</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// split: Teilt die Zeichenkette anhand des Split-Parameters in einzelne Wörter auf</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// gibt ein Array dieser Wörter zurück</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// /\s*/: Wörter, die durch 0 oder mehrere Leerzeichen getrennt sind</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.split(/\\s*/)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.split(</span><span style="color:#a31515">/\s*/</span><span style="color:#000000">)));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// /\s+/ : words separated by one or more spaces</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// /\s+/: Wörter, die durch ein oder mehrere Leerzeichen getrennt sind</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(sprintf(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">.split(/\\s+/)=</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">&quot;</span><span style="color:#000000">, chaîne, chaîne.split(</span><span style="color:#a31515">/\s+/</span><span style="color:#000000">)));</span></span></span>
 </code></pre></div>
 

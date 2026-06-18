@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://stahe.github.io/de-ecmascript6-oct-2019/die-grundlagen-von-javascript.html">
       
       
-        <link rel="prev" href="einrichten-einer-entwicklungsumgebung.html">
+        <link rel="prev" href="einrichtung-einer-arbeitsumgebung.html">
       
       
-        <link rel="next" href="tabellen.html">
+        <link rel="next" href="arrays.html">
       
       
         
@@ -332,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="einrichten-einer-entwicklungsumgebung.html" class="md-nav__link">
+      <a href="einrichtung-einer-arbeitsumgebung.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Einrichten einer Entwicklungsumgebung
+    2. Einrichtung einer Arbeitsumgebung
   
 
     
@@ -521,14 +521,14 @@
   
   
     <li class="md-nav__item">
-      <a href="tabellen.html" class="md-nav__link">
+      <a href="arrays.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Tabellen
+    4. Arrays
   
 
     
@@ -548,14 +548,14 @@
   
   
     <li class="md-nav__item">
-      <a href="literalobjekte.html" class="md-nav__link">
+      <a href="literale-objekte.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Literalobjekte
+    5. Literale Objekte
   
 
     
@@ -683,14 +683,14 @@
   
   
     <li class="md-nav__item">
-      <a href="es6-module.html" class="md-nav__link">
+      <a href="die-module-es6.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. ES6-Module
+    10. Die Module ES6
   
 
     
@@ -737,14 +737,14 @@
   
   
     <li class="md-nav__item">
-      <a href="javascript-http-funktionen.html" class="md-nav__link">
+      <a href="die-javascript-funktionen-von-http.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. JavaScript-HTTP-Funktionen
+    12. Die JavaScript-Funktionen von HTTP
   
 
     
@@ -764,14 +764,14 @@
   
   
     <li class="md-nav__item">
-      <a href="klassen.html" class="md-nav__link">
+      <a href="die-klassen.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    13. Klassen
+    13. Die Klassen
   
 
     
@@ -791,14 +791,14 @@
   
   
     <li class="md-nav__item">
-      <a href="javascript-http-clients-des-steuerberechnungsdienstes.html" class="md-nav__link">
+      <a href="http-javascript-clients-des-steuerberechnungsdienstes.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    14. JavaScript-HTTP-Clients des Steuerberechnungsdienstes
+    14. HTTP-Javascript-Clients des Steuerberechnungsdienstes
   
 
     
@@ -831,64 +831,64 @@
   
 
 
-<p><a id="refheadingtoc2041813980233556"></a></p>
+<p><span id="refheadingtoc2041813980233556" name="refheadingtoc2041813980233556" class="odt-bookmark-anchor"></span></p>
 <h1 id="3-die-grundlagen-von-javascript">3. <span style="color: #365f91">Die Grundlagen von JavaScript</span></h1>
-<p><strong>Hinweis</strong>: Im Folgenden bezieht sich der Begriff <strong>[JavaScript]</strong> stets auf den ECMAScript 6-Standard.</p>
-<p>Erstellen Sie im vorherigen JavaScript-Projekt einen Ordner <strong>mit dem Namen [bases]</strong>. Dort werden wir die Beispiele aus diesem Abschnitt ablegen:</p>
-<p><img src="images/1000000000000444000001D76F20A45A.png" width="437" height="188" style="width:11.561cm;height:4.987cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000444000001D76F20A45A.png" /></p>
-<p><a id="refheadingtoc2041833980233556"></a></p>
+<p><strong>Hinweis</strong>: Im Folgenden bezeichnet der Begriff <strong>[Javascript]</strong> stets den Standard ECMAScript 6.</p>
+<p>Erstellen Sie innerhalb des vorherigen JavaScript-Projekts einen Ordner mit dem Namen <strong>[bases]</strong>. Dort werden wir die Beispiele dieses Abschnitts ablegen:</p>
+<p><img src="images/1000000000000444000001D76F20A45A.png" width="437" height="188" style="width:11.561cm;height:4.979cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000444000001D76F20A45A.png" /></p>
+<p><span id="refheadingtoc2041833980233556" name="refheadingtoc2041833980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="31-skript-bases-01">3.1. <span style="color: #4f81bd">Skript [bases-01]</span></h2>
-<p>Um die Grundlagen von PHP7 vorzustellen, haben wir den folgenden Code verwendet (siehe <a href="https://tahe.developpez.com/tutoriels-cours/php7/"><u><span style="color: #0563c1">verlinkten</span></u></a> Absatz):</p>
+<p>Um die Grundlagen von PHP7 vorzustellen, hatten wir den folgenden Code verwendet (siehe Absatz <a href="https://tahe.developpez.com/tutoriels-cours/php7/"><u><span style="color: #0563c1">„Link“</span></u></a>):</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// this is a comment</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// variable used without being declared</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Dies ist ein Kommentar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Variable, die ohne vorherige Deklaration verwendet wird</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$nom</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;dupont&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a screen display</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eine Bildschirmausgabe</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;nom=</span><span style="color:#0000ff">$nom</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// an array with elements of different types</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// ein Array mit Elementen unterschiedlichen Typs</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$tableau</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;un&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;deux&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">3</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">4</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// its number of elements</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// die Anzahl der Elemente</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$n</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">count(</span><span style="color:#0000ff">$tableau</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a loop</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eine Schleife</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">for</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">&lt;</span><span style="color:#008080"> </span><span style="color:#0000ff">$n</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#000000">++)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;tableau</span><span style="font-weight:bold;color:#008000">[$i]</span><span style="color:#008000">=</span><span style="color:#0000ff">$tableau</span><span style="font-weight:bold;color:#0000ff">[$i]</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// initialize 2 variables with the contents of an array</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Initialisierung von 2 Variablen mit dem Inhalt eines Arrays</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">list</span><span style="color:#000000">(</span><span style="color:#0000ff">$chaine1</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$chaine2</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;chaine1&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;chaine2&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// concatenation of the 2 strings</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verkettung der beiden Zeichenfolgen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$chaine3</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#0000ff">$chaine1</span><span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span><span style="color:#0000ff">$chaine2</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// result display</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Anzeige des Ergebnisses</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;</span><span style="font-weight:bold;color:#008000">[$chaine1,$chaine2,$chaine3]</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use function</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verwendung einer Funktion</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">affiche(</span><span style="color:#0000ff">$chaine1</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the type of a variable can be known</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Der Typ einer Variablen kann bekannt sein</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">afficheType(</span><span style="color:#008000">&quot;n&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$n</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">afficheType(</span><span style="color:#008000">&quot;chaine1&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$chaine1</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">afficheType(</span><span style="color:#008000">&quot;tableau&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$tableau</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the type of a variable can change at runtime</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Der Typ einer Variablen kann sich während der Ausführung ändern</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$n</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;a changé&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">afficheType(</span><span style="color:#008000">&quot;n&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$n</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a function can return a result</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Eine Funktion kann ein Ergebnis zurückgeben</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$res1</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">f1(</span><span style="color:#000080">4</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;res1=</span><span style="color:#0000ff">$res1</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a function can return a table of values</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Eine Funktion kann ein Array von Werten zurückgeben</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">list</span><span style="color:#000000">(</span><span style="color:#0000ff">$res1</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$res2</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$res3</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">f2();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;(res1,res2,res3)=</span><span style="font-weight:bold;color:#008000">[$res1,$res2,$res3]</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// we could have retrieved these values in a table</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Man hätte diese Werte in einem Array abrufen können</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$t</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">f2();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">for</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">&lt;</span><span style="color:#008080"> </span><span style="color:#000000">count(</span><span style="color:#0000ff">$t</span><span style="color:#000000">);</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#000000">++)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;t</span><span style="font-weight:bold;color:#008000">[$i]</span><span style="color:#008000">=</span><span style="color:#0000ff">$t</span><span style="font-weight:bold;color:#0000ff">[$i]</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// testing</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Tests</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">for</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">&lt;</span><span style="color:#008080"> </span><span style="color:#000000">count(</span><span style="color:#0000ff">$t</span><span style="color:#000000">);</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#000000">++)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// displays only channels</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// zeigt nur Zeichenketten an</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(getType(</span><span style="color:#0000ff">$t</span><span style="font-weight:bold;color:#000000">[$i]</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">===</span><span style="color:#008080"> </span><span style="color:#008000">&quot;string&quot;</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;t</span><span style="font-weight:bold;color:#008000">[$i]</span><span style="color:#008000">=</span><span style="color:#0000ff">$t</span><span style="font-weight:bold;color:#0000ff">[$i]</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// == and === comparison operators</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Vergleichsoperatoren == und ===</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">if</span><span style="color:#000000">(</span><span style="color:#008000">&quot;2&quot;</span><span style="color:#000000">==</span><span style="color:#000080">2</span><span style="color:#000000">){</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;avec l&#x27;opérateur ==, la chaîne 2 est égale à l&#x27;entier 2\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">}</span><span style="font-weight:bold;color:#000000">else</span><span style="color:#000000">{</span></span></span>
@@ -900,14 +900,14 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">else</span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;avec l&#x27;opérateur ===, la chaîne 2 n&#x27;est pas égale à l&#x27;entier 2\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// other tests</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// weitere Tests</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">for</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">&lt;</span><span style="color:#008080"> </span><span style="color:#000000">count(</span><span style="color:#0000ff">$t</span><span style="color:#000000">);</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#000000">++)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// displays only integers &gt;10</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// zeigt nur ganze Zahlen &gt;10 an</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(getType(</span><span style="color:#0000ff">$t</span><span style="font-weight:bold;color:#000000">[$i]</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">===</span><span style="color:#008080"> </span><span style="color:#008000">&quot;integer&quot;</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">and</span><span style="color:#008080"> </span><span style="color:#0000ff">$t</span><span style="font-weight:bold;color:#000000">[$i]</span><span style="color:#008080"> </span><span style="color:#000000">&gt;</span><span style="color:#008080"> </span><span style="color:#000080">10</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;t</span><span style="font-weight:bold;color:#008000">[$i]</span><span style="color:#008000">=</span><span style="color:#0000ff">$t</span><span style="font-weight:bold;color:#0000ff">[$i]</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a while loop</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eine while-Schleife</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$t</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">[8, 5, 0, -2, 3, 4]</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$somme</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span></span></span>
@@ -917,33 +917,33 @@
 <span class="odt-code-line"><span class="odt-code-line-content">  $i++;               //$i=$i+1</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}//while</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;somme=</span><span style="color:#0000ff">$somme</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end of program</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Programmende</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//----------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">affiche(</span><span style="color:#0000ff">$chaine</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// displays $chaine</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// zeigt $chaine an</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;chaine=</span><span style="color:#0000ff">$chaine</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">//poster</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">//zeigt an</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//----------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">afficheType(</span><span style="color:#0000ff">$name</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$variable</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// displays the type of $variable</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// zeigt den Typ von $variable an</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;type</span><span style="font-weight:bold;color:#008000">[variable $&quot; . $name . &quot;]</span><span style="color:#008000">=&quot;</span><span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span><span style="color:#000000">getType(</span><span style="color:#0000ff">$variable</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//afficheType</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//----------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">f1(</span><span style="color:#0000ff">$param</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// adds 10 to $param</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// addiert 10 zu $param</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$param</span><span style="color:#008080"> </span><span style="color:#000000">+</span><span style="color:#008080"> </span><span style="color:#000080">10</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//----------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">f2()</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// returns 3 values</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// gibt 3 Werte zurück</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;un&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">100</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">?&gt;</span></span>
@@ -951,55 +951,55 @@
 
 <p>In JavaScript übersetzt ergibt dies den folgenden Code:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// this is a comment</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// constant</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Dies ist ein Kommentar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Konstante</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> nom = </span><span style="color:#a31515">&quot;dupont&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a screen display</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eine Bildschirmausgabe</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;nom : &quot;</span><span style="color:#000000">, nom);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// an array with elements of different types</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// ein Array mit Elementen unterschiedlichen Typs</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> tableau = </span><span style="font-weight:bold;color:#000000">[&quot;un&quot;, &quot;deux&quot;, 3, 4]</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// its number of elements</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// die Anzahl der Elemente</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> n = tableau.length;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a loop</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eine Schleife</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">for</span><span style="color:#000000"> (</span><span style="color:#0000ff">let</span><span style="color:#000000"> i = 0; i &lt; n; i++) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;tableau</span><span style="font-weight:bold;color:#a31515">[&quot;, i, &quot;]</span><span style="color:#a31515"> = &quot;</span><span style="color:#000000">, tableau</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// initialize 2 variables with the contents of an array</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Initialisierung von 2 Variablen mit dem Inhalt eines Arrays</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#000000">[chaine1, chaine2]</span><span style="color:#000000"> = </span><span style="font-weight:bold;color:#000000">[&quot;chaine1&quot;, &quot;chaine2&quot;]</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// concatenation of the 2 strings</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verkettung der beiden Zeichenfolgen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaine3 = chaine1 + chaine2;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// result display</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Anzeige des Ergebnisses</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">console.log(<span style="font-weight:bold">[chaine1, chaine2, chaine3]</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use function</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Verwendung einer Funktion</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">affiche(chaine1);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the type of a variable can be known</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Der Typ einer Variablen kann bekannt sein</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">afficheType(</span><span style="color:#a31515">&quot;n&quot;</span><span style="color:#000000">, n);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">afficheType(</span><span style="color:#a31515">&quot;chaine1&quot;</span><span style="color:#000000">, chaine1);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">afficheType(</span><span style="color:#a31515">&quot;tableau&quot;</span><span style="color:#000000">, tableau);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the type of a variable can change at runtime</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Der Typ einer Variablen kann sich während der Ausführung ändern</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">n = </span><span style="color:#a31515">&quot;a changé&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">afficheType(</span><span style="color:#a31515">&quot;n&quot;</span><span style="color:#000000">, n);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a function can return a result</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Eine Funktion kann ein Ergebnis zurückgeben</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> res1 = f1(4);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;res1=&quot;</span><span style="color:#000000">, res1);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a function can return a table of values</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Eine Funktion kann ein Array von Werten zurückgeben</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> res2, res3;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">[res1, res2, res3]</span> = f2();</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;(res1,res2,res3)=&quot;</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#000000">[res1, res2, res3]</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// we could have retrieved these values in a table</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Man hätte diese Werte in einem Array abrufen können</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> t = f2();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">for</span><span style="color:#000000"> (</span><span style="color:#0000ff">let</span><span style="color:#000000"> i = 0; i &lt; t.length; i++) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;t</span><span style="font-weight:bold;color:#a31515">[i]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, t</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// testing</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Tests</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">for</span><span style="color:#000000"> (</span><span style="color:#0000ff">let</span><span style="color:#000000"> i = 0; i &lt; t.length; i++) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// displays only channels</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// zeigt nur die Zeichenfolgen an</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">if</span><span style="color:#000000"> (</span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (t</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">) === </span><span style="color:#a31515">&quot;string&quot;</span><span style="color:#000000">) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    console.log(</span><span style="color:#a31515">&quot;t</span><span style="font-weight:bold;color:#a31515">[i]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, t</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// == and === comparison operators</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Vergleichsoperatoren == und ===</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">if</span><span style="color:#000000"> (</span><span style="color:#a31515">&quot;2&quot;</span><span style="color:#000000"> == 2) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;avec l&#x27;opérateur ==, la chaîne 2 est égale à l&#x27;entier 2&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">} </span><span style="color:#0000ff">else</span><span style="color:#000000"> {</span></span></span>
@@ -1010,14 +1010,14 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">} </span><span style="color:#0000ff">else</span><span style="color:#000000"> {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;avec l&#x27;opérateur ===, la chaîne 2 n&#x27;est pas égale à l&#x27;entier 2&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// other tests</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// weitere Tests</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">for</span><span style="color:#000000"> (</span><span style="color:#0000ff">let</span><span style="color:#000000"> i = 0; i &lt; t.length; i++) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// displays only integers &gt;10</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// zeigt nur ganze Zahlen &gt;10 an</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">if</span><span style="color:#000000"> (</span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (t</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">) === </span><span style="color:#a31515">&quot;number&quot;</span><span style="color:#000000"> &amp;&amp; Math.floor(t</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">) === t</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000"> &amp;&amp; t</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000"> &gt; 10) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    console.log(</span><span style="color:#a31515">&quot;t</span><span style="font-weight:bold;color:#a31515">[i]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, t</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a while loop</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eine while-Schleife</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">t = <span style="font-weight:bold">[8, 5, 0, -2, 3, 4]</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> i = 0;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> somme = 0;</span></span></span>
@@ -1027,51 +1027,51 @@
 <span class="odt-code-line"><span class="odt-code-line-content">  i++;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;somme=&quot;</span><span style="color:#000000">, somme);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// program stopped because no executable code left</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">//poster</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Das Programm wird beendet, da kein ausführbarer Code mehr vorhanden ist</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">//zeigt an</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//----------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> affiche(chaine) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// chain poster</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// gibt eine Zeichenkette aus</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;chaine=&quot;</span><span style="color:#000000">, chaine);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//afficheType</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//----------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> afficheType(name, variable) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// displays variable type</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// zeigt den Variablentyp an</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;type</span><span style="font-weight:bold;color:#a31515">[variable &quot;, name, &quot;]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (variable));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//----------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> f1(param) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// adds 10 to param</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// addiert 10 zu „param“</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">return</span><span style="color:#000000"> param + 10;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//----------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> f2() {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// returns 3 values</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// gibt 3 Werte zurück</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#000000">[&quot;un&quot;, 0, 100]</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Lassen Sie uns die Unterschiede zwischen PHP- und ECMAScript 6-Code mit der Deklaration <strong>[use strict]</strong> (Zeile 1) besprechen:</p>
+<p>Lassen Sie uns die Unterschiede zwischen den Codes PHP und ECMAScript 6 anhand der Deklaration <strong>[use strict]</strong> (Zeile 1) erläutern:</p>
 <ul>
-  <li>Der erste Unterschied besteht darin, dass in ECMAScript <b>Variablen </b>mit den folgenden Schlüsselwörtern <b>deklariert werden</b>:
+  <li>Der erste Unterschied besteht darin, dass in ECMAScript <b>die Variablen </b>mit den folgenden Schlüsselwörtern <b>deklariert werden</b>:
     <ul>
-      <li><b>[let], </b>um eine Variable zu deklarieren, deren Wert <b>sich </b>während der Codeausführung <b>ändern kann</b>;
+      <li><b>[let], </b>um eine Variable zu deklarieren, deren Wert <b>sich </b>während der Ausführung des Codes <b>ändern kann</b>;
       </li>
-      <li><b>[const] </b>zum Deklarieren einer Variablen, deren Wert <b>sich </b>während der Codeausführung <b>nicht ändert </b>(d. h. eine Konstante);
+      <li><b>[const], </b>um eine Variable zu deklarieren, deren Wert <b>sich </b>während der Ausführung des Codes <b>nicht ändert </b>(also eine Konstante);
       </li>
-      <li>Sie können anstelle von <b>[let] </b>auch das Schlüsselwort<b> [var] </b>verwenden. Dies war das in ECMAScript 5 verwendete Schlüsselwort. Wir werden es in diesem Kurs nicht verwenden;
+      <li>Man kann anstelle von <b>[let] </b>auch das Schlüsselwort <b>[var]</b> verwenden. Dies war das Schlüsselwort, das bei ECMAScript 5 verwendet wurde. Wir werden es in diesem Kurs jedoch nicht verwenden;
       </li>
     </ul>
   </li>
-  <li>Zeile 6: Die Methode<b> [console.log] </b>kann alle Arten von Daten anzeigen: Zeichenketten, Zahlen, Boolesche Werte, Arrays und Objekte. Die PHP-Methode<b> [print] </b>kann Arrays und Objekte nicht nativ anzeigen. Im Ausdruck<b> [console.log] </b>ist<b> [console] </b>ein Objekt und <b>[log] </b>eine Methode dieses Objekts;
+  <li>Zeile 6: Die Anzeigemethode <b>[console.log] </b>kann alle Arten von Daten anzeigen: Zeichenketten, Zahlen, Boolesche Werte, Arrays, Objekte. Die Methode PHP <b>[print] </b>kann Arrays und Objekte nicht nativ anzeigen. Im Ausdruck <b>[console.log] </b>ist <b>[console] </b>ein Objekt und <b>[log] </b>eine Methode dieses Objekts;
   </li>
-  <li>Zeile 8: JavaScript-Arrays sind <b>Objekte, auf die über einen Zeiger verwiesen wird</b>. Wenn wir schreiben:
+  <li>Zeile 8: JavaScript-Arrays sind <b>Objekte, auf die über einen Zeiger verwiesen wird</b>. Wenn man schreibt:
   </li>
 </ul>
 
@@ -1079,13 +1079,13 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> tableau = </span><span style="font-weight:bold;color:#000000">[&quot;un&quot;, &quot;deux&quot;, 3, 4]</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
-<p>ist die Variable <strong>[array]</strong> ein <strong>Zeiger</strong> auf das Literal-Array <strong>[&quot;one&quot;, &quot;two&quot;, 3, 4]</strong>. Das Ändern des Inhalts des Arrays verändert dessen Zeiger nicht. Daher wird ein Array meist mit dem Schlüsselwort <strong>[const]</strong> deklariert. In PHP wird ein Array nicht durch einen Zeiger referenziert. Es ist ein Literalwert;</p>
+<p>ist die Variable <strong>[tableau]</strong> ein <strong>Zeiger</strong> auf das Literal-Array <strong>[&quot;un&quot;, &quot;deux&quot;, 3, 4]</strong>. Eine Änderung des Array-Inhalts hat keine Auswirkung auf den Zeiger. Daher wird ein Array meist mit dem Schlüsselwort <strong>[const]</strong> deklariert. In PHP wird ein Array nicht über einen Zeiger referenziert. Es handelt sich um einen Literalwert;</p>
 <ul>
-  <li>Zeile 12: Die Schleifenvariable <b>[i] </b>wird innerhalb der Schleife deklariert (let). Das Schlüsselwort <b>[let] </b>hat Block-Gültigkeit (Code innerhalb von geschweiften Klammern). Daher ist die Variable <b>[i] </b>in Zeile 12 nur innerhalb der Schleife zugänglich;
+  <li>Zeile 12: Die Schleifenvariable <b>[i] </b>wird (let) innerhalb der Schleife deklariert. Das Schlüsselwort <b>[let] </b>beachtet den Blockbereich (Code zwischen geschweiften Klammern). Somit ist die Variable <b>[i] </b>aus Zeile 12 nur innerhalb der Schleife bekannt;
   </li>
-  <li>Zeile 18: Der Operator zur Zeichenverkettung ist in JavaScript der Operator + und in PHP der Operator . Eine Besonderheit dieses Operators ist, dass er Vorrang vor dem Additionsoperator + hat. Daher gilt:
+  <li>Zeile 18: Der Operator zur Verkettung von Zeichenketten ist in JavaScript der Operator „+“, in PHP der Operator „.“. Eine Besonderheit dieses Operators ist, dass er Vorrang vor dem Additionsoperator „+“ hat. Somit gilt:
     <ul>
-      <li>ergibt in PHP „1“ + 2 die Zahl 3;
+      <li>In PHP ergibt „1“ + 2 die Zahl 3;
       </li>
       <li>in JavaScript ergibt „1“ + 2 die Zeichenkette „12“;
       </li>
@@ -1095,17 +1095,17 @@
   </li>
   <li>Zeile 82: In JavaScript ist es nicht möglich, den Typ der Parameter einer Funktion anzugeben;
   </li>
-  <li>Zeile 91: Mit dem <b>[typeof]</b>-Operator können Sie den Typ eines Datenelements ermitteln. Es gibt vier Typen: number, string, boolean und object. Beachten Sie, dass es in JavaScript keinen <b>[integer]</b>-Typ oder <b>[array]</b>-Typ gibt. Wie bereits erwähnt, werden Arrays über Zeiger behandelt und fallen in die Kategorie „object“;
+  <li>Zeile 91: Mit dem Operator <b>[typeof] </b>lässt sich der Typ eines Datums ermitteln. Es gibt vier davon: Zahl, Zeichenkette, Boolescher Wert und Objekt. Es sei angemerkt, dass es in JavaScript weder einen Typ <b>[integer] </b>noch einen Typ <b>[tableau] </b>gibt. Wie bereits erwähnt, werden Arrays über Zeiger verwaltet und fallen in die Kategorie der Objekte;
   </li>
-  <li>Zeilen 50–59: Wie in PHP gibt es in JavaScript zwei Vergleichsoperatoren, == und ‘===’, die dieselbe Bedeutung haben wie in PHP. ESLint markiert den Operator == meist als potenziellen Fehler. Wir werden durchgehend den Operator ‘===’ verwenden;
+  <li>Zeilen 50–59: Wie in PHP verfügt JavaScript über zwei Vergleichsoperatoren, == und „===“, die dieselbe Bedeutung haben wie in PHP. ESLint weist meist auf den Operator == als möglichen Fehler hin. Es sollte systematisch der Operator ‘===’ verwendet werden;
   </li>
-  <li>Zeile 79: Wir hätten die <b>[return]</b>-Anweisung einfügen können, aber ESLint gibt eine Warnung aus, dass <b>[return] </b>nur innerhalb einer Funktion verwendet werden sollte;
+  <li>Zeile 79: Man hätte die Anweisung <b>[return]</b> verwenden können, aber ESLint löst die Warnung aus, dass <b>[return] </b>nur innerhalb einer Funktion verwendet werden darf;
   </li>
 </ul>
 
 <p>Führen wir diesen Code aus:</p>
-<p><img src="images/100000000000033C00000192E8D1CF4C.png" width="331" height="161" style="width:8.759cm;height:4.253cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000033C00000192E8D1CF4C.png" /></p>
-<p>Ausführungsergebnisse:</p>
+<p><img src="images/100000000000033C00000192E8D1CF4C.png" width="331" height="161" style="width:8.759cm;height:4.249cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000033C00000192E8D1CF4C.png" /></p>
+<p>Die Ergebnisse der Ausführung:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#316bcd">[Running]</span><span style="color:#a31515"> C:\myprograms\laragon-lite\bin\nodejs\node-v10\node.exe &quot;c:\Temp\19-09-01\javascript\bases\bases-01.js&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">nom : dupont</span></span>
@@ -1131,64 +1131,65 @@
 <span class="odt-code-line"><span class="odt-code-line-content">t<span style="font-weight:bold">[ 0 ]</span>= 8</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">t<span style="font-weight:bold">[ 1 ]</span>= 5</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">somme= 13</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#316bcd">[Done]</span><span style="color:#a31515"> exited with </span><span style="color:#800080">code=0</span><span style="color:#a31515"> in </span><span style="color:#09885a">0.316</span><span style="color:#a31515"> seconds</span></span></span>
 </code></pre></div>
 
-<p>Im geschriebenen Code meldet ESLint zwei Fehler:</p>
-<p><img src="images/10000000000005D50000015C686F68EF.png" width="597" height="139" style="width:15.799cm;height:3.683cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005D50000015C686F68EF.png" /></p>
+<p>Im geschriebenen Code meldet ESLINT zwei Fehler:</p>
+<p><img src="images/10000000000005D50000015C686F68EF.png" width="597" height="139" style="width:15.799cm;height:3.679cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005D50000015C686F68EF.png" /></p>
 <ul>
-  <li>Wenn Sie mit der Maus über die rote Warnzeile fahren, wird die Fehlermeldung <b>[3] </b>angezeigt. Hier erkennt ESLint nicht, dass zwei Konstanten verglichen werden. Einer der beiden Operanden sollte eine Variable sein;
+  <li>Wenn man mit dem Mauszeiger über die rote Zeile der Warnung fährt, erscheint die Fehlermeldung <b>[3]</b>. Hier erkennt ESLint nicht, dass zwei Konstanten verglichen werden. Einer der beiden Operanden müsste eine Variable sein;
   </li>
-  <li>in <b>[4] </b>können Sie die Warnung über die Option<b> [Quick Fix] </b>ignorieren, wenn Sie den Fehler nicht beheben möchten;
+  <li>in <b>[4] </b>gibt es eine Option <b>[Quick Fix]</b>, mit der man die Warnung unterdrücken kann, wenn man den Fehler nicht beheben möchte;
   </li>
 </ul>
 
-<p><img src="images/10000000000005DA0000010746915282.png" width="599" height="105" style="width:15.85cm;height:2.783cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005DA0000010746915282.png" /></p>
+<p><img src="images/10000000000005DA0000010746915282.png" width="599" height="105" style="width:15.85cm;height:2.782cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005DA0000010746915282.png" /></p>
 <ul>
-  <li>In <b>[5] </b>können Sie die Warnung für die aktuelle Zeile oder für die gesamte Datei deaktivieren. Wir wählen hier die letztere Option. Zeile <b>[6] </b>wird dann am Anfang der Datei generiert;
+  <li>In <b>[5] </b>besteht die Möglichkeit, die Warnung für die aktuelle Zeile oder für die gesamte Datei zu deaktivieren. Wir wählen hier die letztere Option. Die Zeile <b>[6] </b>wird dann am Anfang der Datei generiert;
   </li>
 </ul>
-<p><a id="refheadingtoc2041853980233556"></a></p>
+
+<p><span id="refheadingtoc2041853980233556" name="refheadingtoc2041853980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="32-skript-bases-02">3.2. <span style="color: #4f81bd">Skript [bases-02]</span></h2>
 <p>Das Skript <strong>[bases-02]</strong> veranschaulicht die Verwendung der Schlüsselwörter <strong>[let]</strong> und <strong>[const]</strong>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// to initialize a variable, use let or const</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// let for variables</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Um eine Variable zu initialisieren, verwendet man „let“ oder „const“</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// „let“ für Variablen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> x = 4;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">x++;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">console.log(x);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// const for constants</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// „const“ für Konstanten</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> y = 10;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">x += y;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// prohibited</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// verboten</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">y++;</span></span>
 </code></pre></div>
 
 <ul>
-  <li>Zeile 11 verursacht einen Laufzeitfehler <b>[1-2]</b>. Sie wird vor der Ausführung von ESLint markiert <b>[3]</b>:
+  <li>Zeile 11 verursacht bei der Ausführung <b>von [1-2]</b> einen Fehler. Dieser wird vor der Ausführung <b>von [3]</b> durch ESLint gemeldet:
   </li>
 </ul>
 
 <p><img src="images/100000000000056E000001566AC0ABC5.png" width="556" height="137" style="width:14.713cm;height:3.62cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000056E000001566AC0ABC5.png" /></p>
-<p><a id="refheadingtoc2041873980233556"></a></p>
+<p><span id="refheadingtoc2041873980233556" name="refheadingtoc2041873980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="33-skript-bases-03">3.3. <span style="color: #4f81bd">Skript [bases-03]</span></h2>
-<p>Das Skript <strong>[bases-03]</strong> überprüft den Geltungsbereich von Variablen in JavaScript:</p>
+<p>Das Skript <strong>[bases-03]</strong> überprüft den Gültigkeitsbereich der Variablen in JavaScript:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// variable scope</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Gültigkeitsbereich von Variablen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> count = 1;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> doSomething() {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// count is known here</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// „count“ ist hier bekannt</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;count=&quot;</span><span style="color:#000000">,count);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// call</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Aufruf</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">doSomething();</span></span>
 </code></pre></div>
 
 <ul>
-  <li>Die außerhalb der Funktion<b> [doSomething] </b>deklarierte Variable <b>[count] </b>ist dennoch innerhalb dieser Funktion bekannt. Dies ist ein grundlegender Unterschied zu PHP;
+  <li>Die außerhalb der Funktion <b>[doSomething]</b> deklarierte Variable <b>[count] </b>ist jedoch in dieser Funktion bekannt. Dies ist ein grundlegender Unterschied zu PHP;
   </li>
 </ul>
 
@@ -1196,25 +1197,25 @@
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#316bcd">[Running]</span><span style="color:#a31515"> C:\myprograms\laragon-lite\bin\nodejs\node-v10\node.exe &quot;c:\Temp\19-09-01\javascript\bases\bases-03.js&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">count= 1</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#316bcd">[Done]</span><span style="color:#a31515"> exited with </span><span style="color:#800080">code=0</span><span style="color:#a31515"> in </span><span style="color:#09885a">0.3</span><span style="color:#a31515"> seconds</span></span></span>
 </code></pre></div>
 
-<p><a id="refheadingtoc2041893980233556"></a></p>
-<h2 id="34-skript-bases-04">3.4. <span style="color: #4f81bd">Skript [bases-04]</span></h2>
-<p>Eine lokale Variable verdeckt eine globale Variable mit demselben Namen:</p>
+<p><span id="refheadingtoc2041893980233556" name="refheadingtoc2041893980233556" class="odt-bookmark-anchor"></span></p>
+<h2 id="34-skript-bases-04">3.4. <span style="color: #4f81bd"><strong>Skript [bases-04]</strong></span></h2>
+<p>Eine lokale Variable überdeckt eine globale Variable mit demselben Namen:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// variable scope</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Gültigkeitsbereich der Variablen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> count = 1;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> doSomething() {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// the local variable hides the global variable</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// Die lokale Variable überdeckt die globale Variable</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">const</span><span style="color:#000000"> count = 2;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;count inside function=&quot;</span><span style="color:#000000">,count);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// global variable</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// globale Variable</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;count outside function=&quot;</span><span style="color:#000000">,count);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// local variable</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// lokale Variable</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">doSomething();</span></span>
 </code></pre></div>
 
@@ -1223,81 +1224,81 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#316bcd">[Running]</span><span style="color:#a31515"> C:\myprograms\laragon-lite\bin\nodejs\node-v10\node.exe &quot;c:\Temp\19-09-01\javascript\bases\bases-04.js&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">count outside function= 1</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">count inside function= 2</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#316bcd">[Done]</span><span style="color:#a31515"> exited with </span><span style="color:#800080">code=0</span><span style="color:#a31515"> in </span><span style="color:#09885a">0.246</span><span style="color:#a31515"> seconds</span></span></span>
 </code></pre></div>
 
-<p><a id="refheadingtoc2041913980233556"></a></p>
+<p><span id="refheadingtoc2041913980233556" name="refheadingtoc2041913980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="35-skript-bases-05">3.5. <span style="color: #4f81bd">Skript [bases-05]</span></h2>
-<p>Eine innerhalb einer Funktion definierte Variable ist außerhalb dieser Funktion nicht bekannt:</p>
+<p>Eine in einer Funktion definierte Variable ist außerhalb dieser Funktion nicht bekannt:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// variable scope</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Gültigkeitsbereich von Variablen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> doSomething() {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// local variable to the</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// lokale Variable innerhalb der Funktion</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">const</span><span style="color:#000000"> count = 2;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;count inside function=&quot;</span><span style="color:#000000">, count);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// here count is unknown</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Hier ist „count“ nicht bekannt</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;count outside function=&quot;</span><span style="color:#000000">, count);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">doSomething();</span></span>
 </code></pre></div>
 
 <p>ESLint meldet einen Fehler in Zeile 9:</p>
-<p><img src="images/10000000000005BA00000149D2F450CA.png" width="513" height="115" style="width:13.58cm;height:3.048cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005BA00000149D2F450CA.png" /></p>
-<p><a id="refheadingtoc2041933980233556"></a></p>
+<p><img src="images/10000000000005BA00000149D2F450CA.png" width="513" height="115" style="width:13.58cm;height:3.039cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005BA00000149D2F450CA.png" /></p>
+<p><span id="refheadingtoc2041933980233556" name="refheadingtoc2041933980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="36-skript-bases-06">3.6. <span style="color: #4f81bd">Skript [bases-06]</span></h2>
-<p>Die Schlüsselwörter <strong>[let]</strong> und <strong>[const]</strong> definieren Variablen mit <strong>[block]</strong>-Gültigkeitsbereich (Code innerhalb von geschweiften Klammern), das Schlüsselwort <strong>[var]</strong> jedoch nicht:</p>
+<p>Die Schlüsselwörter <strong>[let]</strong> und <strong>[const]</strong> definieren Variablen mit dem Geltungsbereich <strong>[bloc]</strong> (Code in geschweiften Klammern), das Schlüsselwort <strong>[var]</strong> jedoch nicht:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the [let] keyword is used to define a block-scope variable</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Mit dem Schlüsselwort [let] lässt sich eine Variable mit Block-Gültigkeitsbereich definieren</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// the [count] variable is only known in this block</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// Die Variable [count] ist nur in diesem Block bekannt</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">let</span><span style="color:#000000"> count = 1;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;count=&quot;</span><span style="color:#000000">, count);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// here the variable [count] is not known</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Hier ist die Variable [count] nicht bekannt</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">count++;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the [const] keyword is used to define a block-span variable</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Mit dem Schlüsselwort [const] kann eine Variable mit Blockgültigkeit definiert werden</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// the [count2] variable is only known in this block</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// Die Variable [count2] ist nur in diesem Block bekannt</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">const</span><span style="color:#000000"> count2 = 1;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;count=&quot;</span><span style="color:#000000">, count2);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// here the variable [count2] is not known</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Hier ist die Variable [count2] nicht bekannt</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">count2++;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the [var] keyword cannot be used to define a block-scope variable</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Mit dem Schlüsselwort [var] kann keine Variable mit Blockgültigkeit definiert werden</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// the variable [count3] will be known globally</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// Die Variable [count3] ist global bekannt</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">var</span><span style="color:#000000"> count3 = 1;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;count=&quot;</span><span style="color:#000000">, count3);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// here the variable [count3] is known</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Hier ist die Variable [count3] bekannt</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">count3++;</span></span>
 </code></pre></div>
 
-<p><strong>Kommentare</strong></p>
+<p><strong>Anmerkungen</strong></p>
 <ul>
-  <li>Zeile 5: Die Variable <b>[count] </b>ist nur innerhalb des Codeblocks bekannt, in dem sie deklariert ist (Zeilen 3–7);
+  <li>Zeile 5: Die Variable <b>[count] </b>ist nur in dem Codeblock bekannt, in dem sie deklariert ist (Zeilen 3–7);
   </li>
-  <li>Zeile 14: Die Konstante <b>[count2] </b>ist nur innerhalb des Codeblocks bekannt, in dem sie deklariert ist (Zeilen 12–16);
+  <li>Zeile 14: Die Konstante <b>[count2] </b>ist nur in dem Codeblock bekannt, in dem sie deklariert ist (Zeilen 12–16);
   </li>
   <li>Zeile 23: Die Variable <b>[count3] </b>ist außerhalb des Codeblocks bekannt, in dem sie deklariert ist (Zeilen 21–25);
   </li>
 </ul>
 
-<p>ESLint meldet die folgenden Fehler:</p>
-<p><img src="images/100000000000053400000459582F975E.png" width="400" height="334" style="width:10.582cm;height:8.842cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000053400000459582F975E.png" /></p>
-<p>Aus diesen Gründen, die mit dem Block-Gültigkeitsbereich zusammenhängen, werden wir von nun an nur noch die Schlüsselwörter <strong>[let]</strong> und <strong>[const]</strong> verwenden.</p>
-<p><a id="refheadingtoc2041953980233556"></a></p>
+<p>ESLint meldet folgende Fehler:</p>
+<p><img src="images/100000000000053400000459582F975E.png" width="400" height="334" style="width:10.582cm;height:8.841cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000053400000459582F975E.png" /></p>
+<p>Aus diesen Gründen, die mit dem Gültigkeitsbereich des Blocks zusammenhängen, werden wir im Folgenden nur die Schlüsselwörter <strong>[let]</strong> und <strong>[const]</strong> verwenden.</p>
+<p><span id="refheadingtoc2041953980233556" name="refheadingtoc2041953980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="37-skript-bases-07">3.7. <span style="color: #4f81bd">Skript [bases-07]</span></h2>
 <p>Datentypen in JavaScript:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// data type jS</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Datentyp jS</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> var1 = 10;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> var2 = </span><span style="color:#a31515">&quot;abc&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> var3 = </span><span style="color:#0000ff">true</span><span style="color:#000000">;</span></span></span>
@@ -1308,7 +1309,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> var6 = </span><span style="color:#0000ff">function</span><span style="color:#000000"> () {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">return</span><span style="color:#000000"> +3;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// type display</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Anzeige der Datentypen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;typeof(var1)=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (var1));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;typeof(var2)=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (var2));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;typeof(var3)=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (var3));</span></span></span>
@@ -1326,27 +1327,28 @@
 <span class="odt-code-line"><span class="odt-code-line-content">typeof(var4)= object</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">typeof(var5)= object</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">typeof(var6)= function</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#316bcd">[Done]</span><span style="color:#a31515"> exited with </span><span style="color:#800080">code=0</span><span style="color:#a31515"> in </span><span style="color:#09885a">0.26</span><span style="color:#a31515"> seconds</span></span></span>
 </code></pre></div>
 
 <p><strong>Kommentare</strong></p>
 <ul>
-  <li>Zeile 7 (Code): Ein Array ist ein Objekt. Daher ist<b> [var4] </b>ein Zeiger auf das Array, nicht das Array selbst;
+  <li>Zeile 7 (Code): Ein Array ist ein Objekt. Insofern ist <b>[var4] </b>ein Zeiger auf das Array, nicht das Array selbst;
   </li>
-  <li>Zeile 8 (Code): <b>[var5] </b>ist ein Zeiger auf ein Literalobjekt. Wir werden sehen, dass JavaScript-Literalobjekte PHP-Klasseninstanzen sehr ähnlich sind. Auch auf sie wird über Zeiger verwiesen;
+  <li>Zeile 8 (Code): <b>[var5] </b>ist ein Zeiger auf ein Literalobjekt. Wir werden sehen, dass Literalobjekte in JavaScript den Klasseninstanzen von PHP sehr ähnlich sind. Auch sie werden über Zeiger referenziert;
   </li>
-  <li>Zeile 11 (Code): Eine Variable kann vom Typ <b>[function] </b>sein (Zeile 7 der Ergebnisse);
+  <li>Zeile 11 (Code): Eine Variable kann vom Typ <b>[fonction]</b> sein (Zeile 7 der Ergebnisse);
   </li>
 </ul>
-<p><a id="refheadingtoc2041973980233556"></a></p>
+
+<p><span id="refheadingtoc2041973980233556" name="refheadingtoc2041973980233556" class="odt-bookmark-anchor"></span></p>
 <h2 id="38-skript-bases-08">3.8. <span style="color: #4f81bd">Skript [bases-08]</span></h2>
-<p>Dieses Skript demonstriert die möglichen Typkonvertierungen in JavaScript.</p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// implicit type changes</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// type --&gt;bool</span></span>
+<p>Dieses Skript zeigt die möglichen Typänderungen in JavaScript.</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27;use strict&#x27;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// implizite Typumwandlungen</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Typ --&gt; bool</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;---------------</span><span style="font-weight:bold;color:#a31515">[Conversion implicite vers un booléen]</span><span style="color:#a31515">------------------------------&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showBool(</span><span style="color:#a31515">&quot;abcd&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showBool(</span><span style="color:#a31515">&quot;&quot;</span><span style="color:#000000">);</span></span></span>
@@ -1358,25 +1360,25 @@
 <span class="odt-code-line"><span class="odt-code-line-content">showBool(4.6);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">showBool({});</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">showBool(undefined);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> showBool(data) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// the conversion from data to Boolean is done automatically in the following test</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// Die Konvertierung von Daten in einen booleschen Wert erfolgt automatisch im folgenden Test</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[data=&quot;, data, &quot;]</span><span style="color:#a31515">, </span><span style="font-weight:bold;color:#a31515">[type(data)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data), </span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[valeur booléenne(data)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, data ? </span><span style="color:#0000ff">true</span><span style="color:#000000"> : </span><span style="color:#0000ff">false</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// implicit type changes to a nume ric type</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// implizite Typumwandlungen in e inen numerischen Typ</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;---------------</span><span style="font-weight:bold;color:#a31515">[Conversion implicite vers un nombre]</span><span style="color:#a31515">------------------------------&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showNumber(</span><span style="color:#a31515">&quot;12&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showNumber(</span><span style="color:#a31515">&quot;45.67&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showNumber(</span><span style="color:#a31515">&quot;abcd&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> showNumber(data) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// data + 1 doesn&#x27;t work, because then jS concatenates strings rather than adding them together</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// „data + 1“ funktioniert nicht, da jS in diesem Fall eine Zeichenfolgenverkettung anstelle einer Addition durchführt</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">const</span><span style="color:#000000"> nombre = data * 1;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[data=&quot;, data, &quot;]</span><span style="color:#a31515">, </span><span style="font-weight:bold;color:#a31515">[type(data)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data), </span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[nombre]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, nombre, </span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[type(nombre)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (nombre));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// explicit type changes to Boolean</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Explizite Typumwandlungen in einen Booleschen Wert</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;---------------</span><span style="font-weight:bold;color:#a31515">[Conversion explicite vers un booléen]</span><span style="color:#a31515">------------------------------&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showBool2(</span><span style="color:#a31515">&quot;abcd&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showBool2(</span><span style="color:#a31515">&quot;&quot;</span><span style="color:#000000">);</span></span></span>
@@ -1388,50 +1390,50 @@
 <span class="odt-code-line"><span class="odt-code-line-content">showBool2(4.6);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">showBool2({});</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">showBool2(undefined);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> showBool2(data) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// the conversion from data to Boolean is explicitly done in the following test</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// Die Konvertierung von „data“ in einen Booleschen Wert erfolgt explizit im folgenden Test</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[&quot;, data, &quot;]</span><span style="color:#a31515">, </span><span style="font-weight:bold;color:#a31515">[type(data)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data), </span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[valeur booléenne(data)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, Boolean(data));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// changements explicites de type vers Number</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Explizite Typumwandlungen in „Number“</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;---------------</span><span style="font-weight:bold;color:#a31515">[Conversion explicite vers un nombre]</span><span style="color:#a31515">------------------------------&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showNumber2(</span><span style="color:#a31515">&quot;12.45&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">showNumber2(67.8);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showNumber2(</span><span style="color:#0000ff">true</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showNumber2(</span><span style="color:#0000ff">null</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> showNumber2(data) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">const</span><span style="color:#000000"> nombre = Number(data);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[data=&quot;, data, &quot;]</span><span style="color:#a31515">, </span><span style="font-weight:bold;color:#a31515">[type(data)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data), </span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[nombre]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, nombre, </span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[type(nombre)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (nombre));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// to String</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// in String</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;---------------</span><span style="font-weight:bold;color:#a31515">[Conversion explicite vers un string]</span><span style="color:#a31515">------------------------------&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">showString(5);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">showString(6.7);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showString(</span><span style="color:#0000ff">false</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">showString(</span><span style="color:#0000ff">null</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">function</span><span style="color:#000000"> showString(data) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">const</span><span style="color:#000000"> chaîne = String(data);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[data=&quot;, data, &quot;]</span><span style="color:#a31515">, </span><span style="font-weight:bold;color:#a31515">[type(data)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data), </span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[chaîne]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, chaîne, </span><span style="color:#a31515">&quot;</span><span style="font-weight:bold;color:#a31515">[type(chaîne)]</span><span style="color:#a31515">=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (chaîne));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// some unexpected implicit conversions</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// einige unerwartete implizite Konvertierungen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;---------------</span><span style="font-weight:bold;color:#a31515">[Autres cas]</span><span style="color:#a31515">------------------------------&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> string1 = </span><span style="color:#a31515">&#x27;1000.78&#x27;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// default string concatenation</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Standardmäßige Verkettung von Zeichenfolgen</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> data1 = string1 + 1.034;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;data1=&quot;</span><span style="color:#000000">, data1, </span><span style="color:#a31515">&quot;type=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data1));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> data2 = 1.034 + string1;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;data2=&quot;</span><span style="color:#000000">, data2, </span><span style="color:#a31515">&quot;type=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data2));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// explicit conversion to number</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// explizite Konvertierung in eine Zahl</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> data3 = Number(string1) + 1.034;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;data3=&quot;</span><span style="color:#000000">, data3, </span><span style="color:#a31515">&quot;type=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data3));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// true is converted into the number 1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// „true“ wird in die Zahl 1 konvertiert</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> data4 = </span><span style="color:#0000ff">true</span><span style="color:#000000"> * 1.18;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;data4=&quot;</span><span style="color:#000000">, data4, </span><span style="color:#a31515">&quot;type=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data4));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// false is converted into the number 0</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// „false“ wird in die Zahl 0 konvertiert</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> data5 = </span><span style="color:#0000ff">false</span><span style="color:#000000"> * 1.18;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;data5=&quot;</span><span style="color:#000000">, data5, </span><span style="color:#a31515">&quot;type=&quot;</span><span style="color:#000000">, </span><span style="color:#0000ff">typeof</span><span style="color:#000000"> (data5));</span></span></span>
 </code></pre></div>
